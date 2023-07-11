@@ -1,0 +1,31 @@
+#car {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px;
+    transition: all 0.5s linear;
+}
+
+body {
+    background-image: url(road.jpg);
+    background-position-x: center;
+    background-position-y: 60%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    animation-name: drive;
+    animation-duration: 60s;
+
+
+    overflow: hidden;
+}
+
+@keyframes drive {
+    0% {
+        background-size: 170%;
+    }
+
+    100% {
+        background-size: 500%;
+    }
+}
